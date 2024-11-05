@@ -192,6 +192,7 @@ def generate_launch_description():
         PythonLaunchDescriptionSource(included_launch_file_path),
         launch_arguments={'use_gazebo': LaunchConfiguration('gz'), 
                           'name' : LaunchConfiguration('name'),
+                          'color' : LaunchConfiguration('color'),
                           'x' :LaunchConfiguration('x'),
                           'y' :LaunchConfiguration('y'),
                           'z' :LaunchConfiguration('z'),

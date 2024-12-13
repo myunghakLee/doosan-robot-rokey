@@ -28,12 +28,12 @@
   </joint>
 
   <xacro:if value="${gz}">
-    <xacro:include filename="$(find dsr_description2)/ros2_control/m1013.gz_ros2_control.xacro" />
-    <xacro:m1013_gz_ros2_control namespace="$(arg namespace)"/>
+    <xacro:include filename="$(find dsr_description2)/ros2_control/a0912.gz_ros2_control.xacro" />
+    <xacro:a0912_gz_ros2_control namespace="$(arg namespace)"/>
   </xacro:if>
   <xacro:unless value="${gz}">
-    <xacro:include filename="$(find dsr_description2)/ros2_control/m1013.ros2_control.xacro" />
-    <xacro:m1013_ros2_control name="m1013"/>
+    <xacro:include filename="$(find dsr_description2)/ros2_control/a0912.ros2_control.xacro" />
+    <xacro:a0912_ros2_control name="a0912"/>
   </xacro:unless>
   
 </robot>

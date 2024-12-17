@@ -84,7 +84,7 @@ If users would like to launch virtually, you need to specify host:=127.0.0.1 (th
 
 
 ## Tutorial
-[Screencast from 07-01-2024 08:19:33 PM.webm](https://github.com/leeminju531/doosan-robot2/assets/70446214/70ece15c-248e-4e67-bf6f-0b23f07577ff)
+[demo.webm](https://github.com/user-attachments/assets/bd91aea0-b8b6-4ce1-9040-9ab06630edbe)
 
 ---
 ### Launch With Rviz2

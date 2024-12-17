@@ -2,6 +2,11 @@
 Changelog for package common2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+1.3.1 (2024-12-17)
+------------------
+* Fixes robot mode inconsistency (https://github.com/doosan-robotics/doosan-robot2/issues/122)
+
+
 1.1.0 (2021-07-01)
 ------------------
 * update changelog

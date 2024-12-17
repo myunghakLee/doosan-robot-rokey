@@ -450,7 +450,8 @@ typedef enum{
 // gpio index enumerated value
 //
 
-// Input 20, Output 16
+// V2 : Input 16, Output 16
+// V3 : Input 20, Output 16
 typedef enum {
     GPIO_CTRLBOX_DIGITAL_INDEX_1= 0,
     GPIO_CTRLBOX_DIGITAL_INDEX_2,

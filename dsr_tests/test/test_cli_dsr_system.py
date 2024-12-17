@@ -1278,7 +1278,7 @@ class TestDsrSysCli(unittest.TestCase):
 		rclpy.spin_until_future_complete(self.node, get_mode_future, timeout_sec=SRV_CALL_TIMEOUT)
 		self.assertTrue(get_mode_future.done(), "system/get_robot_mode future task done")
 		get_mode_resp = get_mode_future.result()
-		self.assertTrue((get_mode_resp.robot_mode == 0) and (get_mode_resp.success == True), "system/get_robot_mode response")
+		self.assertTrue((get_mode_resp.robot_mode == 1) and (get_mode_resp.success == True), "system/get_robot_mode response")
 		self.node.destroy_client(get_mode_cli)
 
 

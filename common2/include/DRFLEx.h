@@ -43,6 +43,7 @@
  *  POSSIBILITY OF SUCH DAMAGE.
  *********************************************************************/
 
+
 #pragma once
 
 #if defined(_WIN32)
@@ -61,7 +62,7 @@
 
 // Specified by user. 2 or 3.
 #ifndef DRCF_VERSION
-    #define DRCF_VERSION 2
+    #define DRCF_VERSION 3 
 #endif
 
 namespace DRAFramework 

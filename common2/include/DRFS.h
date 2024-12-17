@@ -2287,21 +2287,21 @@ typedef struct _CONFIG_ANALOG_WELDING_SETTING
     {
         /* ratio start */
         float                   _fRs;
-        /* ��ȣ��������ð� */
+        /* 보호가스방출시간 */
         float                   _fTss;
-        /* ���������ð� */
+        /* 시작전류시간 */
         float                   _fTas;
-        /* �������Ǻ���ð� */
+        /* 용접조건변경시간 */
         float                   _fTwc;
         /* ratio finish */
         float                   _fRf;
-        /* ���������ð� */
+        /* 종료전류시간 */
         float                   _fTaf;
-        /* ���Ẹȣ��������ð� */
+        /* 종료보호가스방출시간 */
         float                   _fTsf;
-        /* ���� ���� ���� */
+        /* 시작 전압 조건 */
         float                   _fStartVoltage;
-        /* ���� ���� ���� */
+        /* 종료 전압 조건 */
         float                   _fEndVoltage;
     } _tDetail;
     float                       _fTargetFeedingSpeed;
@@ -3501,7 +3501,6 @@ typedef struct _SAFETY_CONFIGURATION_EX2_V3
 	CONFIG_CONFIGURABLE_IO_EX _tConfigurableIO;
 
 } SAFETY_CONFIGURATION_EX2_V3, *LPSAFETY_CONFIGURATION_EX2_V3;
-
 
 
 #pragma pack()

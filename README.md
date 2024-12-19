@@ -45,7 +45,7 @@ Install Docker https://docs.docker.com/engine/install/ubuntu/
     $ . install/setup.bash
 
 #### Note: To use ROS2 with Version 3.x Controller, please ensure that you specify the build options (default: 2).
-$ colcon build --cmake-args -DDRCF_VER=3 
+    $ colcon build --cmake-args -DDRCF_VER=3 
 
 
 

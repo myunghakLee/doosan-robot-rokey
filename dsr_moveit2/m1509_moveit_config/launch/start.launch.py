@@ -121,15 +121,7 @@ def generate_launch_description():
         parameters=[{
         'robot_description': Command(['xacro', ' ', xacro_path, '/', LaunchConfiguration('model'), '.urdf.xacro color:=', LaunchConfiguration('color')])           
     }])
-    rviz_node = Node(
-        package="rviz2",
-        executable="rviz2",
-        namespace=LaunchConfiguration('name'),
-        name="rviz2",
-        output="log",
-        arguments=["-d", rviz_config_file],
-        # condition=IfCondition(gui),
-    )
+
 
     joint_state_broadcaster_spawner = Node(
         package="controller_manager",
@@ -170,16 +162,6 @@ def generate_launch_description():
         package="moveit_ros_move_group",
         executable="move_group",
         # namespace=LaunchConfiguration('name'),
-        # remappings=[
-        #     (
-        #         "/joint_states",
-        #         "/dsr01/joint_states",
-        #     ),
-        #     (
-        #         "/move_action",
-        #         "/dsr01/move_action",
-        #     ),
-        # ],
         output="screen",
         parameters=[moveit_config.to_dict()],
     )
@@ -202,6 +184,7 @@ def generate_launch_description():
             moveit_config.robot_description_semantic,
             moveit_config.planning_pipelines,
             moveit_config.robot_description_kinematics,
+            moveit_config.joint_limits,
         ],
     )
 
